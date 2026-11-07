@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">otpfield</string>
+    <string name="invalid_input_tc">Invalid input. Please enter digits only.</string>
+</resources>
