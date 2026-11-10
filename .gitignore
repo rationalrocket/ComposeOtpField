@@ -1,15 +1,37 @@
-*.iml
+# Built application files
+*.apk
+*.aar
+*.bundle
+*.apks
+
+# Files for LINT
+lint/
+lint-results.xml
+
+# IDE / Android Studio
+.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
 .DS_Store
+
+# Build folders
 /build
 /captures
 .externalNativeBuild
 .cxx
-local.properties
+
+# IntelliJ IDEA / Android Studio specific
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/deploymentTargetSelector.xml
+.idea/appInsightsSettings.xml
+.idea/vcs.xml
+.idea/compiler.xml
+.idea/runConfigurations/
+.idea/shelf/

@@ -54,3 +54,41 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
+
+mavenPublishing {
+    publishToMavenCentral()
+    signAllPublications()
+
+    coordinates(
+        "io.github.rationalrocket",
+        "otpfield",
+        "1.0.0"
+    )
+
+    pom {
+        name.set("Compose OTP Field")
+        description.set("Customizable OTP input components for Jetpack Compose")
+        url.set("https://github.com/rationalrocket/compose_otp_field")
+
+        licenses {
+            license {
+                name.set("Apache License, Version 2.0")
+                url.set("https://www.apache.org/licenses/LICENSE-2.0.txt")
+            }
+        }
+
+        developers {
+            developer {
+                id.set("rationalrocket")
+                name.set("Rational Rocket")
+                email.set("rationalrocket@gmail.com")
+            }
+        }
+
+        scm {
+            url.set("https://github.com/rationalrocket/compose_otp_field")
+            connection.set("scm:git:git://github.com/rationalrocket/compose_otp_field.git")
+            developerConnection.set("scm:git:ssh://github.com/rationalrocket/compose_otp_field.git")
+        }
+    }
+}
